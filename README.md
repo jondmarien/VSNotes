@@ -1,4 +1,4 @@
-# vsnotes README
+# VSNotes README
 
 This is the README for your extension "vsnotes". After writing up a brief description, we recommend including the following sections.
 
