@@ -10,14 +10,28 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:vsnotes.helloWorld"
+    "onCommand:vsnotes.helloWorld",
+    "onCommand:vsnotes.notes",
+    "onCommand:vsnotes.enableNotes"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "vsnotes.helloWorld",
+        "category": "VSNotes",
         "title": "Hello World"
+      },
+      {
+        "command": "vsnotes.notes",
+        "category": "VSNotes",
+        "title": "Do You Like Notes?"
+      },
+      {
+        "command": "vsnotes.enableNotes",
+        "category": "VSNotes",
+        "enablement": "true",
+        "title": "Enable Note Taking"
       }
     ]
   },

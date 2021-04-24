@@ -10,10 +10,16 @@ export function activate(context: vscode.ExtensionContext) {
   );
 
   context.subscriptions.push(
-    vscode.commands.registerCommand("vsnotes.notesQuestion", () => {
-      vscode.window.showInformationMessage("Do you like to make notes?", "uhh..sure?", "not really.");
+    vscode.commands.registerCommand("vsnotes.notes", () => {
+      vscode.window.showInformationMessage(
+        "Do you like to make notes?",
+        "uhh..sure?",
+        "not really."
+      );
     })
   );
+
+  const enableNotes = () => vscode.commands.executeCommand("setContext", "vsnotes.enableNotes", true);
 }
 
 export function deactivate() {}
